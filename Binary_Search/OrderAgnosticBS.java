@@ -15,7 +15,7 @@ public class OrderAgnosticBS {
 
         //find whether the array is sorted in ascending or descending
         boolean isAsc;
-        if(arr[start] <arr[end]){
+        if(arr[start] < arr[end]){
             isAsc = true;
         } else {
             isAsc = false;
