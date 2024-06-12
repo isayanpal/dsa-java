@@ -16,7 +16,7 @@ public class EvenDigits {
         return count;
     }
 
-    //func to check whether a number contains even number of digigts or onot
+    //func to check whether a number contains even number of digits or not
     static boolean even(int num){
         int numberOfDigits = digits(num);
         if(numberOfDigits % 2 == 0){
