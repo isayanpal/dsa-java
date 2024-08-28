@@ -3,19 +3,20 @@ package Trees;
 import java.util.ArrayList;
 import java.util.List;
 
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    Node(int val){
-        data = val;
-        left = null;
-        right = null;
-    }
-}
 
 public class PreTraversal {
+    public static class Node {
+        int value;
+        Node left;
+        Node right;
+
+        Node(int data){
+            value = data;
+            left = null;
+            right = null;
+        }
+    }
+
     //function to perform preorder traversal of the tree and store values in 'arr'
     static  void preorder (Node root, List<Integer> arr){
         //if the current node is null, return
@@ -23,7 +24,7 @@ public class PreTraversal {
             return;
         }
         //push the current node's value into the list
-        arr.add(root.data);
+        arr.add(root.value);
         //recursively traverse the left subtree
         preorder(root.left,arr);
         //recursively traverse the right subtree
@@ -31,7 +32,7 @@ public class PreTraversal {
     }
 
     //function to initiate preorder traversal and return the resulting list
-    static List<Integer> preOrder(Node root){
+    static List<Integer> preOrder_Traversal(Node root){
         //create an empty list to store preorder traversal values
         List<Integer> arr = new ArrayList<>();
         //call the preorder traversal function
@@ -48,7 +49,7 @@ public class PreTraversal {
         root.left.right = new Node(5);
 
         //getting preorder traversal
-        List<Integer> result = preOrder(root);
+        List<Integer> result = preOrder_Traversal(root);
 
         //displaying the preorder traversal result
         System.out.print("Preorder Traversal: ");
