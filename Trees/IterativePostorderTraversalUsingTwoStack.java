@@ -76,3 +76,4 @@ public class IterativePostorderTraversalUsingTwoStack {
         printList(result);
     }
 }
+//expected output : Postorder traversal: 4 5 2 3 1
