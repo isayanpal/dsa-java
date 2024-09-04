@@ -1,4 +1,4 @@
-package Leetcode_qs;
+package Leetcode_qs.HashmapSets;
 //LC242
 
 import java.util.HashMap;

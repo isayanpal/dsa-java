@@ -1,4 +1,4 @@
-package Leetcode_qs;
+package Leetcode_qs.HashmapSets;
 
 //LC771
 

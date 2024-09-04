@@ -1,4 +1,4 @@
-package Strings;
+package Leetcode_qs.TwoPointers;
 //L344
 public class ReverseArrayOfStrings {
 //    using StringBuilder
@@ -13,6 +13,7 @@ public class ReverseArrayOfStrings {
          );
     }
 //    using swap approach
+    // using two pointers
     static void reverseString(char[] s){
         int left = 0;
         int right = s.length-1;
